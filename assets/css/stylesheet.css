@@ -1698,6 +1698,72 @@ audio {
   font-weight: 400; /* Normal weight for "Familia Díaz Ortíz" */
 }
 
+.navbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f4d7a1;
+  border: 2px solid #ad9466;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Arrange buttons in a column */
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+}
+
+.navbar.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; /* Adjust size for icons */
+  font-weight: 500;
+  color: #784c00;
+  background-color: #fff;
+  border: 2px solid #ad9466;
+  border-radius: 10px;
+  padding: 10px; /* Adjust padding for icons */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-btn i {
+  margin: 0; /* Remove margin for icons */
+}
+
+.navbar-btn:hover {
+  background-color: #d18a05;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+  }
+
+  .navbar-btn {
+    font-size: 1rem; /* Smaller icons for mobile */
+    padding: 5px; /* Adjust padding for smaller buttons */
+  }
+}
+
 
 
 
