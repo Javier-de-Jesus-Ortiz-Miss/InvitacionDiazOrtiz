@@ -1329,7 +1329,7 @@ audio {
 .wrapper-all{
   display: block;
   position: relative;
-  margin-top: -90vh;
+  margin-top: -100vh;
 }
 
 .wrapper-countdown{
