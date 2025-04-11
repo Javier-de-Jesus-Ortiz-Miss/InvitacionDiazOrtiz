@@ -115,7 +115,7 @@ async function verifyPhone() {
     }
 }
 
-const closingDate = new Date('2025-05-01T17:26:00').getTime(); // Fecha de cierre
+const closingDate = new Date('2025-05-01T23:59:00').getTime(); // Fecha de cierre
 
 // Enviar datos al Apps Script (doPost)
 async function submitForm() {
